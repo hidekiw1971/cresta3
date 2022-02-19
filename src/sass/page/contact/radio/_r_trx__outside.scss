@@ -1,0 +1,28 @@
+@use "global" as *;
+
+// sm 375px
+.r_trx__outside {
+  display: inline-block;
+  border: 2px solid #333;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  top: 0.3rem;
+
+  // tablet 768px
+  @include mq(md) {
+    width: 1.65rem;
+    height: 1.65rem;
+    border: 1px solid #333;
+    margin: 0 0 0 0.2rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+@use "global" as *;
+
+.btn {
+  // sm first
+  font-family: "Montserrat Medium";
+  font-size: 0.875rem;
+  font-weight: $bold;
+  color: #fff;
+  background-color: #000;
+
+  // tablet 768px
+  @include mq(md) {
+    font-size: 1.3125rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-size: 0.875rem;
+  }
+}

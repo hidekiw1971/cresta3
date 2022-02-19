@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.pplcy__agree_outside {
+  // sm 375px
+  display: inline-block;
+  width: 1.0375rem;
+  height: 1.0375rem;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  margin: 0.2rem 0 0 0;
+
+  // tablet 768px
+  @include mq(md) {
+    width: 2.35625rem;
+    height: 1.8rem;
+    border: 1px solid #333;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    width: 2.2rem;
+    height: 1.25625rem;
+    margin: 0.2rem 0.67rem 0 0;
+  }
+}

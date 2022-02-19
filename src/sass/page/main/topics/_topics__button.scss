@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px
+.topics__button {
+  margin-top: rem(18);
+  margin-bottom: rem(40);
+  padding-right: rem(3);
+
+  // tablet size 768px
+  @include mq(md) {
+    max-width: 14.3rem;
+    width: 100%;
+    padding: 1.1rem 0 1.2rem 0;
+    margin: 2.5rem 0 3.5rem 0;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: 10rem;
+    width: 100%;
+    padding: 0.8rem 0 0.8rem 0;
+    margin: 0.4rem 0 0 58.8rem;
+  }
+}

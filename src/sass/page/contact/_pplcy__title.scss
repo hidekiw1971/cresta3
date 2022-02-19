@@ -1,0 +1,24 @@
+@charset "utf-8";
+@use "global" as *;
+
+.pplcy__title {
+  // sm first
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: $exbold;
+  letter-spacing: 0rem;
+  line-height: 1;
+  color: #272727;
+
+  // tablet 768px
+  @include mq(md) {
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+}

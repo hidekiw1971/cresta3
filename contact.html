@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header__block">
+      <div class="header__inner">
+        <a class="header__img" href="index.html">
+          <img src="images/site-logo@2x.png" srcset="images/site-logo@2x.png 1x, images/site-logo@3x.png 2x" alt="">
+        </a>
+        <div class="menu__btn"><span></span></div>
+        <p class="headder__msg1">MENU</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+    <!-- <section class="md_mv cntct__mv">
+      <div class="md_mv__bgc cntct__mv_bgc"></div>
+      <div class="md_mv__imgBox cntct__mv_imgBox">
+        <img class="md_mv__img cntct__mv_img" src="images/heading-img_contact@2x.png"
+          srcset="images/heading-img_contact@2x.png 1x, images/heading-img_contact@3x.png 2x" alt="">
+        <div class="md_mv__imgShadow cntct__mv_imgShadow">
+        </div>
+      </div>
+      <div class="md_mv__msgBox cntct__mv_msgBox">
+        <div class="md_mv__masgBox--inner cntct__mv_msgBox_inner">
+          <p class="md_mv__wrd1 cntct__mv_wrd1">CONTACT</p>
+          <p class="md_mv__wrd2 cntct__mv_wrd2">お問い合わせ</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="cntMdfy__mv">
+      <div class="cntMdfy__mv_bgc"></div>
+      <div class="cntMdfy__mv_imgBox">
+        <div class="cntMdfy__mv_imgBox-inner">
+          <img class="cntMdfy__mv_img" src="images/heading-img_contact@2x.png"
+            srcset="images/heading-img_contact@2x.png 1x, images/heading-img_contact@3x.png 2x" alt="">
+        </div>
+        <div class="cntMdfy__mv_imgShadow">
+        </div>
+      </div>
+      <div class="cntMdfy__mv_msgBox">
+        <div class="cntMdfy__mv_msgBox_inner">
+          <p class="cntMdfy__mv_wrd1">CONTACT</p>
+          <p class="cntMdfy__mv_wrd2">お問い合わせ</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="cntct__expl cntct__expl_mdfy">
+      <p>
+        ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+      </p>
+    </section>
+
+    <!--  -->
+    <section class="cntct__kinds_wrap">
+      <div class="hissu__wrap">
+        <h2 class="cntct__kinds_title cntct__kinds_title-mdfy">お問い合わせ種別</h2>
+        <p class="hissu hissu__mdfy">必須</p>
+      </div>
+      <form action="#" method="post">
+        <div class="cntct__radio_wrap">
+          <label class="r_trx__label"><input class="r_trx__input" type="radio" name="trx" value=""><span
+              class="r_trx__outside"><span class="r_trx__inside"></span></span><span
+              class="r_trx__wrd">制作依頼</span></label>
+          <label class="r_trx__label"><input class=" r_trx__input" type="radio" name="trx" value=""><span
+              class="r_trx__outside"><span class="r_trx__inside"></span></span><span
+              class="r_trx__wrd">採用</span></label>
+          <label class="r_trx__label"><input class=" r_trx__input" type="radio" name="trx" value=""><span
+              class="r_trx__outside"><span class="r_trx__inside"></span></span><span
+              class="r_trx__wrd">IR</span></label>
+          <label class="r_trx__label"><input class=" r_trx__input" type="radio" name="trx" value=""><span
+              class="r_trx__outside"><span class="r_trx__inside"></span></span><span
+              class="r_trx__wrd">その他</span></label>
+        </div>
+
+        <!-- 会社名・団体名 -->
+        <div class="cntct__cmpny cntct__cmpny_mdfy">
+          <label class="cntct__label cntct__label_mdfy" for="cmpny_name">会社名・団体名</label>
+          <input class="cntct__input" type="text" name="cmpny_name" id="cmpny_name">
+        </div>
+
+        <!-- お名前 -->
+        <div class="cntct__name cntct__name_mdfy">
+          <div class="hissu__wrap_name">
+            <label class="cntct__label cntct__label_mdfy cntct__labelName_mdfy" for="name">お名前</label>
+            <p class="hissu hissu__mdfy">必須</p>
+          </div>
+          <input class="cntct__input" type="text" name="name" id="name">
+        </div>
+
+        <!-- メールアドレス -->
+        <div class="cntct__mail">
+          <div class="hissu__wrap_mail">
+            <label class="cntct__label cntct__label_mdfy cntct__labelMail_mdfy" for="mail">メールアドレス</label>
+            <p class="hissu hissu__mdfy">必須</p>
+          </div>
+          <input class="cntct__input" type="text" name="mail" id="mail">
+        </div>
+
+        <!-- 電話番号 -->
+        <div class="cntct__tel">
+          <label class="cntct__label cntct__label_mdfy cntct__labelTel_mdfy" for="tel">電話番号</label>
+          <input class="cntct__input" type="text" name="tel" id="tel">
+        </div>
+
+        <!-- お問い合わせ内容 -->
+        <div class="cntct__inqry cntct__wrap cntct__wrapInqry_mdfy">
+          <div class="hissu__wrap_inqry">
+            <label class="cntct__label cntct__label_mdfy cntct__labelInqry_mdfy" for="inquiry">お問い合わせ内容</label>
+            <p class="hissu hissu__mdfy">必須</p>
+          </div>
+          <input class="cntct__input cntct__inputInqry_mdfy" type="text" name="inquiry" id="inquiry">
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <div class="pplcy__allWrap">
+        <h2 class="pplcy__title pplcy__title_mdfy">PRIVACY POLICY</h2>
+        <div class="pplcy__wrap pplcy__wrap_mdfy">
+          <h3 class="pplcy__subTitle pplcy__subTitle_mdfy">個人情報保護方針</h3>
+          <p class="pplcy__expl pplcy__expl_mdfy">
+            株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。<br>
+            <br>
+            1.個人情報の収集、利用<br>
+            当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。<br>
+            <br>
+            2.個人情報の第三者への開示と提供<br>
+            収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>
+            業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+            <br>
+            3.個人情報の保護<br>
+            当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。<br>
+            <br>
+            4.法令および関連規範の遵守<br>
+            当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。<br>
+            <br>
+            5.個人情報の開示・訂正・削除<br>
+            当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。<br>
+            <br>
+            法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。<br>
+            <br>
+            お問い合わせ窓口<br>
+            当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
+            株式会社ファイアープレイス<br>
+            044-589-4333<br>
+          </p>
+        </div>
+        <div class="pplcy__agree pplcy__agree_mdfy">
+          <label class="pplcy__agree_label">
+            <input class="pplcy__agree_input" type="radio" name="plcy" value="plcy"><span
+              class="pplcy__agree_outside"><span class="pplcy__agree_inside"></span></span><span
+              class="pplcy__agree_wrd">個人情報の取り扱いについて同意のうえ送信します。</span>
+          </label>
+        </div>
+        <input class="btn btn__mdfy" type="submit" value="送信">
+      </div>
+    </section>
+
+    <!-- menu list : mlBlock(menu list block)-->
+    <div class="mlBlock">
+      <nav class="mlBlock__nav">
+        <ul class="mlBlock__ul">
+          <li class="mlBlock__li"><img class="mlBlock__img" src="images/D@2x.png"
+              srcset="images/D@2x.png 1x, images/D@3x.png 2x" alt=""></li>
+          <li class="mlBlock__li">ABOUT US</li>
+          <li class="mlBlock__li">WORKS</li>
+          <li class="mlBlock__li">CULTURE</li>
+          <li class="mlBlock__li">TOPICS</li>
+          <li class="mlBlock__li">CONTACT</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mlBlock__bgc">
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p class="footer__word">
+      ©2018 DIGSMILE INC.
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.mlBlock__li {
+  font-family: "Montserrat";
+  font-weight: $exbold;
+  font-size: rem(20);
+  color: #fff;
+  letter-spacing: rem(1.36);
+  line-height: 1;
+
+  /* 余白調整 */
+  margin: rem(0) rem(0) rem(30) rem(0);
+}
+
+.mlBlock__li:last-child {
+  margin-bottom: rem(0);
+}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.cntct__expl {
+  font-family: "游ゴシック体";
+  font-size: 0.875rem;
+  font-weight: $regular;
+  letter-spacing: 0rem;
+  line-height: 1.7;
+  color: #333;
+
+  // tablet 768px
+  @include mq(md) {
+    font-family: "Noto Sans JP";
+    font-size: 1.4rem;
+    letter-spacing: 0.042rem;
+    line-height: 1.5;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-family: "Noto Sans JP";
+    font-size: 1rem;
+    letter-spacing: 0.003rem;
+    line-height: 1.4;
+  }
+}

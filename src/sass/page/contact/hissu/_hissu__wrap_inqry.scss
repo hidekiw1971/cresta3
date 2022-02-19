@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.hissu__wrap_inqry {
+  // sm 375px
+  max-width: 23.4375rem;
+  width: 100%;
+  display: flex;
+  margin: 0 0 0.65rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+    margin: 0 0 0.9rem 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 0 0.6rem 08rem;
+  }
+}

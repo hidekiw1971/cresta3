@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "global" as *;
+
+.headder__msg1 {
+  /* sm first */
+  font-family: "Montserrat";
+  font-weight: $exbold;
+  font-size: rem(10);
+  color: #fff;
+  letter-spacing: rem(0.05);
+  line-height: 1;
+
+  margin: auto rem(0) auto rem(0);
+  padding: 0 0 0 0;
+
+  // tablet 768px
+  @include mq(md) {
+    margin: auto 0.4rem auto 0.3rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: auto 1.3rem auto -0.5rem;
+  }
+}

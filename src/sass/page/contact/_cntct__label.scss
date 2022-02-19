@@ -1,0 +1,26 @@
+@use "global" as *;
+
+// sm 375px
+.cntct__label {
+  font-family: "游ゴシック体";
+  font-size: 1rem;
+  font-weight: $bold;
+  letter-spacing: 0rem;
+  line-height: 1;
+  color: #333;
+
+  // tablet 768px
+  @include mq(md) {
+    font-family: "Noto Sans JP";
+    font-size: 1.5rem;
+    font-weight: $regular;
+    letter-spacing: -0.06rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-family: "Noto Sans JP Bold";
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+}

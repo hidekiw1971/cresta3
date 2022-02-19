@@ -1,0 +1,30 @@
+@use "global" as *;
+
+// sm 375px
+.r_trx__wrd {
+  font-family: "游ゴシック体";
+  font-size: 1rem;
+  font-weight: $bold;
+  letter-spacing: 0rem;
+  line-height: 1;
+  color: #333;
+  margin: 0 0 0 0.7rem;
+  padding: 0 0 0 0;
+
+  // tablet 768px
+  @include mq(md) {
+    font-family: "Noto Sans JP";
+    font-size: 1.5rem;
+    font-weight: $regular;
+    margin: 0 0 0 0.89rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-family: "游ゴシック体";
+    font-size: 1rem;
+    font-weight: $regular;
+    letter-spacing: 0rem;
+    margin: 0 0 0 0.59rem;
+  }
+}

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+// sm first
+.cntMdfy__mv_imgBox {
+  width: 76.4%;
+  height: 16.875rem;
+  // background: #dcdcdc;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // tablet 768px
+  @include mq(md) {
+    width: 75.2%;
+    height: 47.375rem;
+  }
+
+  // PC 1440PX
+  @include mq(xl) {
+    width: 76.4%;
+    height: 24.175rem;
+  }
+}

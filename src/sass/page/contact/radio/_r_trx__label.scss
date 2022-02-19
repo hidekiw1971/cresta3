@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.r_trx__label {
+  // sm 375px
+  margin: 0 3.4rem 0.55rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 2.4rem 0.55rem 0;
+  }
+}

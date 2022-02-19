@@ -1,0 +1,10 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.hissu {
+  font-family: "游ゴシック体";
+  font-size: 0.75rem;
+  font-weight: $regular;
+  color: #fff;
+}

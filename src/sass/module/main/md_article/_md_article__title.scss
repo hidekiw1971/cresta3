@@ -1,0 +1,27 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px
+.md_article__title {
+  font-family: "游ゴシック体";
+  font-weight: $bold;
+  font-size: rem(12);
+  color: #333;
+  letter-spacing: rem(0.816);
+  line-height: 1.666;
+  margin: rem(4) rem(0) rem(0) rem(0);
+
+  // tablet size 768rem
+  @include mq(md) {
+    font-size: 1.4rem;
+    margin: 0.4125rem 0 0 0;
+    letter-spacing: -0.135rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: 0.875rem;
+    letter-spacing: 0rem;
+    margin: 0.25rem 0 0.4rem 0;
+  }
+}

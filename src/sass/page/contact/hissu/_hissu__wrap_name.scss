@@ -1,0 +1,19 @@
+@use "global" as *;
+
+// sm 375px
+.hissu__wrap_name {
+  max-width: 23.4375rem;
+  width: 100%;
+  display: flex;
+  margin: 0 0 0.65rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+    margin: 0 0 1rem 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 0 0.7rem 8.05rem;
+  }
+}

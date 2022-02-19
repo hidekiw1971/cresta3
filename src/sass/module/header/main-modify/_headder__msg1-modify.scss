@@ -1,0 +1,14 @@
+@charset "utf-8";
+@use "global" as *;
+
+.header__msg1-modify {
+  // sm first 375px(37.5rem)
+
+  // tablet size 768px(76.8rem)
+  @include mq(md) {
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+  }
+}

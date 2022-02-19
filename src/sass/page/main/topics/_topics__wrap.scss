@@ -1,0 +1,24 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.topics__wrap {
+  padding: rem(43) rem(0) rem(0) rem(0);
+  margin: 0 0.9rem 0 0.9rem;
+
+  // tablet size 768px
+  @include mq(md) {
+    max-width: 63.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 3.95rem 0 0 2.7rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: 68.75rem;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0 0 10.6rem;
+  }
+}

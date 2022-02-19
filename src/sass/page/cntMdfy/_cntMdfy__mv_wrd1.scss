@@ -1,0 +1,23 @@
+@use "global" as *;
+
+// sm first
+.cntMdfy__mv_wrd1 {
+  font-family: "Montserrat";
+  font-size: 3.25rem;
+  font-weight: $exbold;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  color: #fff;
+
+  // tablet 768px
+  @include mq(md) {
+    font-size: 4.35rem;
+    letter-spacing: 0.5rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-size: 4.5rem;
+    letter-spacing: 0.29rem;
+  }
+}

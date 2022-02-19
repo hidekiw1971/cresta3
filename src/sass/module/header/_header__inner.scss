@@ -1,0 +1,31 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.header__inner {
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: rem(0) rem(0) rem(0) rem(0);
+  padding: rem(18.5) rem(15) rem(0) rem(15);
+  padding: 1.15625rem 0.9375rem 1.3rem 0.9375rem;
+
+  // tablet size
+  @include mq("md") {
+    // margin-top: rem(30);
+    padding: rem(18.5) rem(43) rem(0) rem(83.6);
+    padding: 3.2rem 2.3rem 3rem 5.2rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: rem(1440);
+    width: 100%;
+    padding: 2.05625rem 3.1375rem 2rem 6.0375rem;
+    margin: initial;
+  }
+}

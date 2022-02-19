@@ -1,0 +1,11 @@
+@charset "utf-8";
+@use "global" as *;
+
+.company__frame {
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: rem(1100);
+    width: 100%;
+    margin: 0 auto;
+  }
+}

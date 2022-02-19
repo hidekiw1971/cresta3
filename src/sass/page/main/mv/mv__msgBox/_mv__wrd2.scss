@@ -1,0 +1,29 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.mv__wrd2 {
+  font-family: "Montserrat Medium";
+  font-weight: $bold;
+  font-size: rem(16);
+  color: #fff;
+  letter-spacing: rem(0.208);
+  line-height: 1;
+
+  margin: rem(0) rem(0) rem(0) rem(0);
+  padding: rem(0) rem(0) rem(17.4) rem(0);
+
+  // tablet size 768px(76.8rem)
+  @include mq(md) {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    padding: 0 0 1.7rem 0;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: 1.25rem;
+    letter-spacing: -0.06rem;
+    padding: 0 0 1.25rem 0;
+  }
+}

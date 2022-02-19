@@ -1,0 +1,11 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+main {
+  max-width: rem(1440);
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.about__filter {
+  // max-width: 37.5rem;
+  // width: 100%;
+  // height: 54.1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.27);
+  position: absolute;
+  top: 0rem;
+
+  // tablet size 768px(76.8rem)
+  @include mq(md) {
+  }
+}

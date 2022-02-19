@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.pplcy__agree_label {
+  // sm 375px
+  display: flex;
+
+  // tablet 768px
+  @include mq(md) {
+  }
+}

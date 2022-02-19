@@ -1,0 +1,18 @@
+@charset "utf-8";
+@use "global" as *;
+
+.pplcy__title_mdfy {
+  // sm first
+  margin: 0 0 0.625rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+    padding: 0 0 0 0.2rem;
+    margin: 0 0 1.025rem 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 0 0.625rem -0.2rem;
+  }
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.md_mv__wrd2 {
+  font-family: "Noto Sans JP Bold";
+  font-weight: $regular;
+  font-size: rem(16);
+  color: #fff;
+  letter-spacing: rem(0);
+  line-height: 0.5;
+  padding: rem(8) rem(0) rem(0) rem(0);
+
+  // tablet size
+  @include mq(md) {
+    font-size: rem(22);
+    padding: rem(21) rem(0) rem(0) rem(0);
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-family: "Noto Sans JP Bold";
+    font-weight: $regular;
+    font-size: rem(20);
+    color: #fff;
+    letter-spacing: rem(0);
+    line-height: 0.5;
+    padding: rem(17.6) rem(0) rem(0) rem(0);
+  }
+}

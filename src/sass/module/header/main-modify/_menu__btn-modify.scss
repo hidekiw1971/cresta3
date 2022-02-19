@@ -1,0 +1,11 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px(37.5rem)
+.menu__btn-modify {
+  // tablet size 768px(76.8rem)
+  @include mq(md) {
+    max-width: 1.9rem;
+    margin: auto 0.8rem auto auto;
+  }
+}

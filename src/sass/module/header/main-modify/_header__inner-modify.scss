@@ -1,0 +1,19 @@
+@charset "utf-8";
+@use "global" as *;
+
+.header__inner-modify {
+  // sm first 375px(37.5rem)
+
+  // tablet size 768px(76.8rem)
+  @include mq(md) {
+    // margin: 2.2rem 0 0 0;
+    // padding: 1rem 2.3rem 0 5.2rem;
+    padding: 3.2rem 2.3rem 3rem 5.2rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    // margin: 1.1rem 0 0 0;
+    padding: 2.1rem 2.3rem 2rem 5.8rem;
+  }
+}

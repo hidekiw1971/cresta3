@@ -1,0 +1,17 @@
+@charset "utf-8";
+@use "global" as *;
+
+.cntct__labelMail_mdfy {
+  // sm first
+  margin: 0 0.75rem 0 0;
+
+  // tablet 768px
+  @include mq(md) {
+    margin: 0 1.3rem 0.9rem 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 0.8rem 0.7rem 8rem;
+  }
+}

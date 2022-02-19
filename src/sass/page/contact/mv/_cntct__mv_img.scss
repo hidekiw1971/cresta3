@@ -1,0 +1,14 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.cntct__mv_img {
+  object-position: -5.5rem -0.1rem;
+  transform: scale(1.07);
+
+  // tablet size 768px
+  @include mq(md) {
+    object-position: -7.1rem 1.4rem;
+    transform: scale(1.96);
+  }
+}

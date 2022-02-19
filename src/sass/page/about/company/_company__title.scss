@@ -1,0 +1,33 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.company__title {
+  font-family: "Montserrat";
+  font-size: rem(32);
+  font-weight: $exbold;
+  color: #333;
+  letter-spacing: rem(2.176);
+  line-height: 1;
+  border-bottom: solid rem(1) #dddddd;
+  padding: rem(84) 0 rem(33.3) 0;
+
+  // tablet size
+  @include mq(md) {
+    font-size: 3rem;
+    letter-spacing: 0.07rem;
+    padding-bottom: 2.7rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: rem(32);
+    max-width: rem(1100);
+    width: 100%;
+    letter-spacing: rem(2.4);
+    padding-top: rem(124);
+    padding-bottom: rem(33);
+    margin: 0 auto;
+    border-bottom: solid rem(2) #dddddd;
+  }
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px
+.contact__explanation {
+  font-family: "游ゴシック体";
+  font-weight: $regular;
+  font-size: rem(16);
+  color: #333;
+  letter-spacing: rem(0);
+  line-height: 2;
+  padding: rem(25) rem(0) rem(0) rem(0);
+
+  // tablet size 768px
+  @include mq(md) {
+    max-width: 45.5rem;
+    width: 100%;
+
+    font-size: 1.6rem;
+    padding: 0 0 1.875rem 0;
+    letter-spacing: -0.16rem;
+    line-height: 1.75;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 2;
+    padding: 0 0 0 0;
+    margin: 0 0 1.3rem 0;
+  }
+}

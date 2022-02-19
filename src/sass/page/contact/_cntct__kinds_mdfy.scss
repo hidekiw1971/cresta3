@@ -1,0 +1,8 @@
+@use "global" as *;
+
+// sm 375px
+.cntct__kinds_mdfy {
+  // tablet 768px
+  @include mq(md) {
+  }
+}

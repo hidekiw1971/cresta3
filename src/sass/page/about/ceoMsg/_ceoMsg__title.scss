@@ -1,0 +1,27 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.ceoMsg__title {
+  font-family: "Montserrat";
+  font-size: rem(31);
+  font-weight: $exbold;
+  color: #333;
+  letter-spacing: rem(2.108);
+  line-height: 1;
+  padding: rem(0) rem(28) rem(25.8) rem(28);
+
+  // tablet siza
+  @include mq(md) {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 2.1rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: rem(32);
+    letter-spacing: rem(2.2);
+    padding-bottom: rem(23.3);
+  }
+}

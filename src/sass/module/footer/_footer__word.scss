@@ -1,0 +1,12 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.footer__word {
+  font-family: "Montserrat Medium";
+  font-weight: $regular;
+  font-size: rem(10);
+  color: #fff;
+  letter-spacing: rem(0.15);
+  line-height: 5.2;
+  text-align: center;
+}

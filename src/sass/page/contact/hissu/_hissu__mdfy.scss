@@ -1,0 +1,29 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.hissu__mdfy {
+  max-width: 2.125rem;
+  width: 100%;
+  height: 1.125rem;
+  background-color: #525252;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0rem;
+  line-height: 1.4;
+  // margin: auto 0;
+
+  // tablet 768px
+  @include mq(md) {
+    max-width: 3.025rem;
+    width: 100%;
+    height: 1.47rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    max-width: 2.125rem;
+    width: 100%;
+    height: 1.07rem;
+  }
+}

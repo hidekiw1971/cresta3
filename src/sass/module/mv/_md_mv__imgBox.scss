@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.md_mv__imgBox {
+  max-width: 76.5%;
+  height: 86.29%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  /* tablet size */
+  @include mq(md) {
+    max-width: 76.4%;
+    height: 86%;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: rem(1100);
+    width: 100%;
+    height: rem(387);
+  }
+}

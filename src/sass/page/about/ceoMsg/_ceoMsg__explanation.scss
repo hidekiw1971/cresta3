@@ -1,0 +1,28 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.ceoMsg__explanation {
+  font-family: "Noto Sans JP Bold";
+  font-size: rem(14);
+  font-weight: $regular;
+  color: #333;
+  letter-spacing: rem(0);
+  line-height: 2;
+  padding: rem(0) rem(28) rem(0) rem(28);
+
+  // tablet size
+  @include mq(md) {
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.8;
+    padding: 0rem 2.45rem 0rem 1.75rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: rem(16);
+    letter-spacing: rem(0);
+    line-height: 2;
+  }
+}

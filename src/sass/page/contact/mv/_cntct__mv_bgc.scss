@@ -1,0 +1,14 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.cntct__mv_bgc {
+  padding: 22.83125rem 0 0 0;
+
+  // tablet size 768px
+  @include mq(md) {
+    max-width: 52.9%;
+    width: 100%;
+    height: 54.83125rem;
+  }
+}

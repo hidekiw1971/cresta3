@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.cntct__cmpny_mdfy {
+  // sm 375px
+  // tablet 768px
+  @include mq(md) {
+  }
+}

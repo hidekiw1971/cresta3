@@ -1,0 +1,24 @@
+@use "global" as *;
+
+// sm first
+.cntMdfy__mv_wrd2 {
+  font-family: "游ゴシック体";
+  font-size: 1rem;
+  font-weight: $bold;
+  letter-spacing: 0rem;
+  line-height: 1;
+  color: #fff;
+  padding: 0.95rem 0 0 12rem;
+
+  // tablet 768px
+  @include mq(md) {
+    font-size: 1.4rem;
+    padding: 1.55rem 0 0 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-size: 1.25rem;
+    padding: 0.75rem 0 0 0;
+  }
+}

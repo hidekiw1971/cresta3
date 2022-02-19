@@ -1,0 +1,17 @@
+@charset "utf-8";
+@use "global" as *;
+
+.pplcy__agree {
+  // sm 375px
+  margin: 0 0 2.7rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+    margin: 2.5rem 0 2.6rem 11.4rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 2.5rem 0 0rem 8.95rem;
+  }
+}

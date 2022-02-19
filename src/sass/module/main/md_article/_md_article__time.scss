@@ -1,0 +1,22 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px
+.md_article__time {
+  font-family: "Montserrat";
+  font-weight: $bold;
+  font-size: rem(10);
+  color: #cecece;
+  letter-spacing: rem(0.015);
+  line-height: 1;
+
+  // tablet size 768px
+  @include mq(md) {
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: 0.625rem;
+    letter-spacing: 0rem;
+  }
+}

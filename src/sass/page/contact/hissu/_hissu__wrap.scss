@@ -1,0 +1,22 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.hissu__wrap {
+  max-width: 23.4375rem;
+  width: 100%;
+  display: flex;
+  margin: 0 0 0.9rem 0;
+
+  // tablet 768px
+  @include mq(md) {
+    min-width: 59.8rem;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    margin: 0 0 1rem 0;
+  }
+}

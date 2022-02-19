@@ -1,0 +1,21 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.company__map {
+  width: rem(345);
+  height: rem(470);
+
+  // tablet size
+  @include mq(md) {
+    width: 63.4rem;
+    height: 20.6rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: rem(1100);
+    width: 100%;
+    height: rem(360);
+  }
+}

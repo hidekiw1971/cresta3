@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.pplcy__agree_wrd {
+  // sm 375px
+  font-family: "游ゴシック体";
+  font-size: 0.875rem;
+  font-weight: $regular;
+  margin: 0 0 0 0.6rem;
+  width: 19.6875rem;
+  height: 2.5625rem;
+  display: block;
+  line-height: 1.6;
+
+  // tablet 768px
+  @include mq(md) {
+    font-size: 1.4125rem;
+    font-weight: $regular;
+    width: 61.7375rem;
+    height: 2.5625rem;
+    margin: 0 0 0 0.9rem;
+    letter-spacing: 0.029rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    font-family: "Noto Sans JP";
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    margin: 0 0 0 0;
+  }
+}

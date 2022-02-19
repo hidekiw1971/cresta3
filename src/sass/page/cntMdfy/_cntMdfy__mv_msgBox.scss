@@ -1,0 +1,18 @@
+@use "global" as *;
+.cntMdfy__mv_msgBox {
+  position: absolute;
+  top: 8.4375rem;
+  left: 4.25rem;
+
+  // tablet 768px
+  @include mq(md) {
+    top: 12.5375rem;
+    left: 38.85rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    top: 10.34rem;
+    left: 55.85rem;
+  }
+}

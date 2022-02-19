@@ -1,0 +1,27 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first 375px
+.contact__title {
+  font-family: "Montserrat";
+  font-weight: $exbold;
+  font-size: rem(28);
+  color: #333;
+  letter-spacing: rem(1.904);
+  line-height: 1;
+  padding: rem(33) rem(0) rem(0) rem(0);
+
+  // tablet size 768rem
+  @include mq(md) {
+    font-size: 2.9rem;
+    padding: 3rem 0 2.275rem 0;
+    letter-spacing: -0.04rem;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    padding: 3rem 0 1.5rem 0;
+  }
+}

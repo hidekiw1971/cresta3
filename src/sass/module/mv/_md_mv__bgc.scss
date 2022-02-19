@@ -1,0 +1,28 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.md_mv__bgc {
+  max-width: 52.8%;
+  width: 100%;
+  background-color: #222222;
+
+  padding: rem(224.5) rem(0) rem(224.5) rem(0);
+  margin: 0 0 0 auto;
+
+  /* tablet size */
+  @include mq(md) {
+    padding: rem(440) rem(0) rem(440) rem(0);
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    max-width: 54.2%;
+    width: 100%;
+    height: rem(464);
+    background-color: #222222;
+    padding: initial;
+
+    // padding: rem(462) rem(0) rem(0) rem(0);
+    margin: 0 0 0 auto;
+  }
+}

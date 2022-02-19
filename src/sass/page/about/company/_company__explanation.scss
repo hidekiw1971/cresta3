@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "global" as *;
+
+// sm first
+.company__explanation {
+  font-family: "Noto Sans JP";
+  font-size: rem(14);
+  font-weight: $regular;
+  color: #333;
+  letter-spacing: rem(0.056);
+  line-height: 1;
+
+  // tablet size
+  @include mq(md) {
+    font-size: 1.4rem;
+    font-weight: $regular;
+  }
+
+  // pc size 1440px
+  @include mq(xl) {
+    font-size: rem(16);
+    font-weight: $regular;
+    letter-spacing: rem(0);
+  }
+}

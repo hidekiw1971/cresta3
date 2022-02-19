@@ -1,0 +1,9 @@
+@charset "utf-8";
+@use "global" as *;
+/* sm first */
+.mlBlock__img {
+  width: rem(42.15);
+
+  /* 余白調整 */
+  margin: rem(0) auto rem(40) auto;
+}

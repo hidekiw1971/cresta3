@@ -1,0 +1,21 @@
+@use "global" as *;
+
+// sm first 375px
+.cntMdfy__mv_bgc {
+  width: 52.9%;
+  height: 22.8125rem;
+  background: #222;
+  margin: 0 0 0 auto;
+
+  // tablet 768px
+  @include mq(md) {
+    width: 52.9%;
+    height: 55.0125rem;
+  }
+
+  // pc 1440px
+  @include mq(xl) {
+    width: 54.2%;
+    height: 28.2125rem;
+  }
+}
